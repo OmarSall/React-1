@@ -1,4 +1,4 @@
-export const Greeting = () => {
+export const Greeting = ( {name} ) => {
     const currentDate = new Date();
     const dayMonthHourSecond = currentDate.toLocaleDateString("en-US", {
         day: '2-digit',
@@ -7,6 +7,6 @@ export const Greeting = () => {
         minute: '2-digit',
     });
     return (
-        <p className='greeting'>Hello! Today is {dayMonthHourSecond}</p>
+        <p className='greeting'>Hello {name}! Today is {dayMonthHourSecond}</p>
     );
 };
