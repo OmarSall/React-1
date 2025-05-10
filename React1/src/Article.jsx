@@ -1,8 +1,10 @@
+import styles from './Article.module.css';
+
 export const Article = ({title, description}) => {
     return (
-        <div>
-            <h1>{title}</h1>
-            <p>{description}</p>
+        <div className={styles.Article}>
+            <div className={styles.title}>{title}</div>
+            <div className={styles.description}>{description}</div>
         </div>
     );
 };

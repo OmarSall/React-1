@@ -1,3 +1,5 @@
+import styles from './Greeting.module.css';
+
 export const Greeting = ( {name} ) => {
     const currentDate = new Date();
     const dayMonthHourSecond = currentDate.toLocaleDateString("en-US", {
@@ -7,6 +9,8 @@ export const Greeting = ( {name} ) => {
         minute: '2-digit',
     });
     return (
-        <p className='greeting'>Hello {name}! Today is {dayMonthHourSecond}</p>
+        <p className={styles.greetingParagraph}>
+            Hello {name}! Today is {dayMonthHourSecond}
+        </p>
     );
 };
