@@ -1,4 +1,5 @@
 import { Article } from './Article';
+import { Greeting } from "./Greeting.jsx";
 
 const App = () => {
     const title = 'Lorem Ipsum';
@@ -7,6 +8,7 @@ const App = () => {
     return (
         <div>
             <Article title={title} description={description} />
+            <Greeting />
         </div>
     )
 };

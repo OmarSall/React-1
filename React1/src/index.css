@@ -66,3 +66,10 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.greeting {
+  color: skyblue;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  text-align: center;
+}
